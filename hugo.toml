@@ -1,0 +1,5 @@
+baseURL = 'https://drbuddhamd.github.io/zensurgery'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "hugo-theme-console"
+publishDir = "docs"
