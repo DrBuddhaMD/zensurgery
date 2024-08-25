@@ -1,5 +1,5 @@
 baseURL = 'https://drbuddhamd.github.io/zensurgery'
 languageCode = 'en-us'
 title = 'Zen Surgery'
-theme = "hugo-theme-console"
+theme = "archie"
 publishDir = "docs"
