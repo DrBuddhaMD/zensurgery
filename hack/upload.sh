@@ -7,8 +7,8 @@
 # Uploads an image to the len.to s3 bucket. Depends on exiftool
 set -e
 
-S3BUCKET=ginput
-CDN_BASE="https://d17enza3bfujl8.cloudfront.net"
+S3BUCKET=zensurgery
+CDN_BASE="d1aq3cviajvep4.cloudfront.net"
 
 if [[ "$#" -ne 2 ]] ; then
   cat << EOF
