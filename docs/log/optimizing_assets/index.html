@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    
+<title>len.to</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robot" content="noimageindex">
+<meta name="description" content="len.to is a photography blog">
+<meta property="og:description" content="len.to is a photography blog">
+<meta property="og:site_name" content="len.to">
+
+<link rel="icon" href="/favicon.svg">
+
+
+
+<link rel="stylesheet" href="/zensurgery/css/bundle.min.8890e586cac727ce72b2153554c948fb323673c41863699eafe7c820cba8fae2.css" integrity="sha256-iJDlhsrHJ85yshU1VMlI&#43;zI2c8QYY2mer&#43;fIIMuo&#43;uI=">
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+        <div class="three columns">
+          <a class="title" href="/">len.to</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="ten columns log">
+          <h2>Optimizing Asset Delivery</h2>
+          <p>I&rsquo;ve wanted to improve the CSS and JavaScript portions of this website for a
+while. The main items I want to address are:</p>
+<ul>
+<li>Removing JavaScript from HTML templates</li>
+<li>Find a better way to inject site content into JavaScript</li>
+<li>Bundle all CSS into a single file</li>
+<li>Minify and fingerprint CSS and JavaScript</li>
+</ul>
+<p>I initially intended to plug various CSS and JavaScript processing tools into the
+Docker build pipeline, but that quickly spiraled out of control when <code>npm</code> got involved.
+Then I discovered <a href="https://gohugo.io/hugo-pipes/introduction/">Hugo Pipes</a>, which
+solves these problems natively.</p>
+<h2 id="heading"></h2>
+<h2 id="removing-javascript-from-html-templates">Removing JavaScript from HTML templates</h2>
+<p>I started by extracting all JavaScript from HTML and appending it to a single <code>./assets/js/main.js</code> file.
+Then from HTML I load, process, and render the script:</p>
+<pre tabindex="0"><code>{{ $main := resources.Get &#34;js/main.js&#34; | js.Build | minify | fingerprint }}
+&lt;script type=&#34;text/javascript&#34; src=&#34;{{ $main.RelPermalink }}&#34; defer&gt;&lt;/script&gt;
+</code></pre><p>However, this blew up because the current JavaScript implementation depends on Go templating to build an array of tags:</p>
+<pre tabindex="0"><code>let tags = [{{ range $name, $_ := $.Site.Taxonomies.tags }}{{ $name }},{{ end }}]
+</code></pre><p>And processing this with <a href="https://gohugo.io/hugo-pipes/js/">js.Build</a> fails because it&rsquo;s not valid JavaScript.</p>
+<h2 id="heading-1"></h2>
+<h2 id="a-better-way-to-inject-site-content-into-javascript">A better way to inject site content into JavaScript</h2>
+<p>Turns out Hugo Pipes supports passing a map of params to js.Build, and those params can be accessed in JavaScript with the
+<code>import</code> keyword. So all together we get:</p>
+<pre tabindex="0"><code>{{ $tags := slice }}
+{{ range $name, $_ := $.Site.Taxonomies.tags }}
+  {{ $tags = $tags | append $name }} 
+{{ end }}
+
+{{ $main := resources.Get &#34;js/main.js&#34; | js.Build (dict &#34;params&#34; (dict &#34;tags&#34; $tags)) | minify | fingerprint }}
+&lt;script type=&#34;text/javascript&#34; src=&#34;{{ $main.RelPermalink }}&#34; defer&gt;&lt;/script&gt;
+</code></pre><p>And in JavaScript we just import the tags array:</p>
+<pre tabindex="0"><code>import {tags} from &#39;@params&#39;;
+</code></pre><h2 id="heading-2"></h2>
+<h2 id="bundling-css">Bundling CSS</h2>
+<p>The site uses (2) CSS files:</p>
+<ul>
+<li>Skeleton CSS for a basic foundation, served from a CDN</li>
+<li>Local styles in <code>main.css</code></li>
+</ul>
+<p>I moved both stylesheets into <code>./assets/css/</code> and then bundled, minified, and fingerprinted
+with Hugo Pipes:</p>
+<pre tabindex="0"><code>{{ $skeleton := resources.Get &#34;css/skeleton.css&#34; }}
+{{ $style := resources.Get &#34;css/main.css&#34; }}
+{{ $css := slice $skeleton $style | resources.Concat &#34;css/bundle.css&#34; | minify | fingerprint }}
+&lt;link rel=&#34;stylesheet&#34; href=&#34;{{ $css.Permalink }}&#34; integrity=&#34;{{ $css.Data.Integrity }}&#34;&gt;
+</code></pre><h2 id="heading-3"></h2>
+<h2 id="bonus-removing-google-fonts">Bonus: Removing Google Fonts</h2>
+<p>I also took this opportunity to replace the Google-hosted OpenSans font with
+the system font stack, using the same technique as github.com:</p>
+<pre tabindex="0"><code>body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+</code></pre><h2 id="heading-4"></h2>
+<p>These changes, implemented in
+<a href="https://github.com/bndw/len.to/commit/0b4e3002b03bb49ad08efc69e941f99e6a7c0da2">0b4e300</a> and
+<a href="https://github.com/bndw/len.to/commit/0c29a6c13b4f2c20943d31fd073e0c721d17b002">0c29a6c</a>
+produced faster page load times, improved user privacy, and generally better code quality.</p>
+<h2 id="heading-5"></h2>
+
+        </div>
+      </div>
+    </div>
+    
+
+
+   
+
+   
+
+
+
+<script src="/zensurgery/js/index.min.c850206f61d434285956af08eb73f24cddf1ff83934236ffd43e4fd917bc2f21.js" defer></script>
+
+  </body>
+</html>

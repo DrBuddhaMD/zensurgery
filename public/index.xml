@@ -1,15 +1,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>len.to rss</title>
-    <link>https://drbuddhamd.github.io/zensurgery/</link>
+    <link>http://localhost:1313/zensurgery/</link>
     <description>Recent content on len.to</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2021 12:12:10 -0700</lastBuildDate><atom:link href="https://drbuddhamd.github.io/zensurgery/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jan 2021 12:12:10 -0700</lastBuildDate><atom:link href="http://localhost:1313/zensurgery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sunday, Dec 1, 2019</title>
-      <link>https://drbuddhamd.github.io/zensurgery/img/0a5a9cfb/</link>
+      <link>http://localhost:1313/zensurgery/img/0a5a9cfb/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://drbuddhamd.github.io/zensurgery/img/0a5a9cfb/</guid>
+      <guid>http://localhost:1313/zensurgery/img/0a5a9cfb/</guid>
       <description>sample, sample2</description>
     </item>
     

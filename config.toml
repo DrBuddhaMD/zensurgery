@@ -6,5 +6,6 @@ baseURL = "https://drbuddhamd.github.io/zensurgery"
 languageCode = "en-us"
 paginate = 20
 paginatePath = ""
+publishDir = "docs"
 [permalinks]
   img = "/img/:title/"
