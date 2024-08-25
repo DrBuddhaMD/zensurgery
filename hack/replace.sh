@@ -7,7 +7,7 @@
 # Replaces an image in the len.to s3 bucket. Depends on exiftool
 set -e
 
-S3BUCKET=ginput
+S3BUCKET=zensurgery
 
 if [[ "$#" -ne 2 ]] ; then
   cat << EOF

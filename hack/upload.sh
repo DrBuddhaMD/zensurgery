@@ -32,7 +32,7 @@ extension="${filename##*.}"
 
 id=$(uuidgen | tr [:upper:] [:lower:] | cut -d'-' -f 1)
 new_filename="${id}.${extension}"
-url="${CDN_BASE}/${new_filename}"
+url="https://${CDN_BASE}/${new_filename}"
 
 # Strip all metadata from the image
 exiftool -all= $1
@@ -43,8 +43,10 @@ aws s3 cp --acl public-read "${filepath}" "s3://${S3BUCKET}/${new_filename}"
 echo "Enter location"
 read loc
 
+
+
 # Create the content/img file
-img="./content/img/${id}.md"
+img="/Users/shanthanchalla/Documents/blog/zensurgery/content/img/${id}.md"
 touch "${img}"
 echo "---" > "${img}"
 echo "title: ${id}" >> "${img}"
@@ -57,4 +59,4 @@ echo "- ${loc}" >> "${img}"
 echo "" >> "${img}"
 echo "---" >> "${img}"
 
-vim "${img}"
+#nano "${img}"

@@ -2,44 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://drbuddhamd.github.io/zensurgery/</loc>
+    <loc>http://localhost:1313/zensurgery/img/</loc>
+    <lastmod>2024-08-25T03:23:59-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zensurgery/</loc>
+    <lastmod>2024-08-25T03:23:59-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zensurgery/log/</loc>
     <lastmod>2021-01-01T12:12:10-07:00</lastmod>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/log/</loc>
+    <loc>http://localhost:1313/zensurgery/log/validating-generated-html/</loc>
     <lastmod>2021-01-01T12:12:10-07:00</lastmod>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/log/validating-generated-html/</loc>
-    <lastmod>2021-01-01T12:12:10-07:00</lastmod>
-  </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/log/emoji-favicons/</loc>
+    <loc>http://localhost:1313/zensurgery/log/emoji-favicons/</loc>
     <lastmod>2020-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/log/optimizing_assets/</loc>
+    <loc>http://localhost:1313/zensurgery/log/optimizing_assets/</loc>
     <lastmod>2020-12-26T20:47:24-07:00</lastmod>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/img/0a5a9cfb/</loc>
+    <loc>http://localhost:1313/zensurgery/img/0a5a9cfb/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/img/</loc>
+    <loc>http://localhost:1313/zensurgery/tags/sample/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/tags/sample/</loc>
+    <loc>http://localhost:1313/zensurgery/tags/sample2/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/tags/sample2/</loc>
+    <loc>http://localhost:1313/zensurgery/tags/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/tags/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/zensurgery/about/</loc>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/about/</loc>
+    <loc>http://localhost:1313/zensurgery/archive/</loc>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/archive/</loc>
+    <loc>http://localhost:1313/zensurgery/random/</loc>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/random/</loc>
+    <loc>http://localhost:1313/zensurgery/stats/</loc>
   </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/stats/</loc>
-  </url><url>
-    <loc>https://drbuddhamd.github.io/zensurgery/categories/</loc>
+    <loc>http://localhost:1313/zensurgery/categories/</loc>
   </url>
 </urlset>

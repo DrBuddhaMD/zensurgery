@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Imgs on len.to</title>
-    <link>https://drbuddhamd.github.io/zensurgery/img/</link>
+    <link>http://localhost:1313/zensurgery/img/</link>
     <description>Recent content in Imgs on len.to</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://drbuddhamd.github.io/zensurgery/img/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/zensurgery/img/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>0a5a9cfb</title>
-      <link>https://drbuddhamd.github.io/zensurgery/img/0a5a9cfb/</link>
+      <link>http://localhost:1313/zensurgery/img/0a5a9cfb/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://drbuddhamd.github.io/zensurgery/img/0a5a9cfb/</guid>
+      <guid>http://localhost:1313/zensurgery/img/0a5a9cfb/</guid>
       <description></description>
     </item>
   </channel>
