@@ -1,0 +1,12 @@
+<!--
+# Copyright 2022 Ben Woodward. All rights reserved.
+# Use of this source code is governed by a GPL style
+# license that can be found in the LICENSE file.
+-->
+{{ $tags := slice }}
+{{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
+  {{ $tags = $tags | append $name }} 
+{{ end }}
+
+{{ $index := resources.Get "js/index.js" | js.Build (dict "params" (dict "tags" $tags)) | minify | fingerprint }}
+<script src="{{ $index.RelPermalink }}" defer></script>

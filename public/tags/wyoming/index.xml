@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wyoming on len.to</title>
+    <link>http://localhost:1313/tags/wyoming/</link>
+    <description>Recent content in Wyoming on len.to</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Jul 2018 22:35:49 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/wyoming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C508d0ca</title>
+      <link>http://localhost:1313/img/c508d0ca/</link>
+      <pubDate>Sun, 08 Jul 2018 22:35:49 -0800</pubDate>
+      <guid>http://localhost:1313/img/c508d0ca/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCF0099</title>
+      <link>http://localhost:1313/img/dscf0099/</link>
+      <pubDate>Sun, 01 Jul 2018 13:44:06 -0600</pubDate>
+      <guid>http://localhost:1313/img/dscf0099/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCF9062</title>
+      <link>http://localhost:1313/img/dscf9062/</link>
+      <pubDate>Sat, 06 Jan 2018 00:42:47 -0800</pubDate>
+      <guid>http://localhost:1313/img/dscf9062/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCF9063</title>
+      <link>http://localhost:1313/img/dscf9063/</link>
+      <pubDate>Sat, 06 Jan 2018 00:42:47 -0800</pubDate>
+      <guid>http://localhost:1313/img/dscf9063/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

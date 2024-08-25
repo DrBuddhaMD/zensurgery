@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My New Hugo Site</title>
-    <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
+    <title>Tags on len.to</title>
+    <link>https://drbuddhamd.github.io/zensurgery/tags/</link>
+    <description>Recent content in Tags on len.to</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://drbuddhamd.github.io/zensurgery/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sample</title>
+      <link>https://drbuddhamd.github.io/zensurgery/tags/sample/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://drbuddhamd.github.io/zensurgery/tags/sample/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sample2</title>
+      <link>https://drbuddhamd.github.io/zensurgery/tags/sample2/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://drbuddhamd.github.io/zensurgery/tags/sample2/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

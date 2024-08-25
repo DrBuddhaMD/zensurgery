@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Surfing on len.to</title>
+    <link>http://localhost:1313/tags/surfing/</link>
+    <description>Recent content in Surfing on len.to</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/surfing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>8da7cfc7</title>
+      <link>http://localhost:1313/img/8da7cfc7/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/img/8da7cfc7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>71dadde7</title>
+      <link>http://localhost:1313/img/71dadde7/</link>
+      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/img/71dadde7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>L1010095</title>
+      <link>http://localhost:1313/img/l1010095/</link>
+      <pubDate>Sat, 22 Jun 2019 12:08:31 -0700</pubDate>
+      <guid>http://localhost:1313/img/l1010095/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>L1010098</title>
+      <link>http://localhost:1313/img/l1010098/</link>
+      <pubDate>Sat, 22 Jun 2019 12:08:31 -0700</pubDate>
+      <guid>http://localhost:1313/img/l1010098/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>60f86b17</title>
+      <link>http://localhost:1313/img/60f86b17/</link>
+      <pubDate>Sat, 21 Jul 2018 22:47:24 -0800</pubDate>
+      <guid>http://localhost:1313/img/60f86b17/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>D76079b7</title>
+      <link>http://localhost:1313/img/d76079b7/</link>
+      <pubDate>Sun, 26 Nov 2017 19:45:00 -0800</pubDate>
+      <guid>http://localhost:1313/img/d76079b7/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

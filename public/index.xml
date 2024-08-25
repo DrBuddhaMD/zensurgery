@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Site</description>
-    <generator>Hugo</generator>
+    <title>len.to rss</title>
+    <link>https://drbuddhamd.github.io/zensurgery/</link>
+    <description>Recent content on len.to</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Aug 2024 00:24:07 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jan 2021 12:12:10 -0700</lastBuildDate><atom:link href="https://drbuddhamd.github.io/zensurgery/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Example</title>
-      <link>http://localhost:1313/posts/example/</link>
-      <pubDate>Sun, 25 Aug 2024 00:24:07 -0700</pubDate>
-      <guid>http://localhost:1313/posts/example/</guid>
-      <description>This is an example post</description>
+      <title>Sunday, Dec 1, 2019</title>
+      <link>https://drbuddhamd.github.io/zensurgery/img/0a5a9cfb/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://drbuddhamd.github.io/zensurgery/img/0a5a9cfb/</guid>
+      <description>sample, sample2</description>
     </item>
+    
   </channel>
 </rss>

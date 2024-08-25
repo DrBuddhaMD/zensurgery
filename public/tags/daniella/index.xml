@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daniella on len.to</title>
+    <link>http://localhost:1313/tags/daniella/</link>
+    <description>Recent content in Daniella on len.to</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2017 22:03:07 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/daniella/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSCF8763</title>
+      <link>http://localhost:1313/img/dscf8763/</link>
+      <pubDate>Sun, 15 Oct 2017 22:03:07 -0700</pubDate>
+      <guid>http://localhost:1313/img/dscf8763/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DSCF8423_01</title>
+      <link>http://localhost:1313/img/dscf8423_01/</link>
+      <pubDate>Fri, 08 Sep 2017 08:27:38 -0700</pubDate>
+      <guid>http://localhost:1313/img/dscf8423_01/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5bab4aee</title>
+      <link>http://localhost:1313/img/5bab4aee/</link>
+      <pubDate>Sat, 02 Sep 2017 18:54:43 -0800</pubDate>
+      <guid>http://localhost:1313/img/5bab4aee/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ecb117ad</title>
+      <link>http://localhost:1313/img/ecb117ad/</link>
+      <pubDate>Sat, 02 Sep 2017 18:53:14 -0800</pubDate>
+      <guid>http://localhost:1313/img/ecb117ad/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

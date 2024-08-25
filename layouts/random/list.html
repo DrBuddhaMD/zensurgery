@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!--
+# Copyright 2022 Ben Woodward. All rights reserved.
+# Use of this source code is governed by a GPL style
+# license that can be found in the LICENSE file.
+-->
+<head>
+  <title>len.to</title>
+  {{ $urls := slice }}
+  {{ range where .Site.RegularPages "Type" "img" }}
+    {{ $urls = $urls | append .RelPermalink }} 
+  {{ end }}
+  {{ $js := resources.Get "js/random.js" | js.Build (dict "params" (dict "images" $urls )) | minify | fingerprint }}
+  <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
+</head>
+<noscript>Sorry! Viewing a random image requires JavaScript.</noscript>
